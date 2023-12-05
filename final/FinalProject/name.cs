@@ -1,12 +1,6 @@
-public class name
+public class Person
 {
-    public string _student;
-    public string _Bishop;
-    public string _President;
-    public string _age;
-    public string _sex;
-    public string _location;
-    public string _country;
-    public int _friends;
-
+    public string Name { get; set; }
+    public string Details { get; set; }
+    public bool IsMember { get; set; }
 }

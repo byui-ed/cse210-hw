@@ -5,28 +5,22 @@ class Program
     static void Main(string[] args)
     {
     
-        Console.WriteLine("Welcome to the Membership Registration Program");
+         Person person = new Person();
+
         Console.WriteLine("Please enter your name:");
-        string name = Console.ReadLine();
+        person.Name = Console.ReadLine();
 
+        Console.WriteLine("Please enter your details:");
+        person.Details = Console.ReadLine();
 
-        Console.WriteLine($"Hello, {name}!");
+        Console.WriteLine("Do you want to be a member of the Church of Jesus Christ of Latter-day Saints? (yes/no)");
+        string answer = Console.ReadLine();
 
-        Console.WriteLine("Would you like to become a member of the Church of Jesus Christ of Latter-day Saints? (yes/no)");
-        string response = Console.ReadLine();
+        person.IsMember = (answer.ToLower() == "yes");
 
-        if (response.ToLower() == "yes")
-        {
-            Console.WriteLine("Thank you for your interest in becoming a member!");
-        
-        }
-        else
-        {
-            Console.WriteLine("Thank you for considering it. If you change your mind, feel free to reach out!");
-        }
-
-        Console.WriteLine("Press any key to exit.");
-        Console.ReadKey();
+        Console.WriteLine("Name: " + person.Name);
+        Console.WriteLine("Details: " + person.Details);
+        Console.WriteLine("Is a member of the Church of Jesus Christ of Latter-day Saints: " + person.IsMember);
 
     }
 }
