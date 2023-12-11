@@ -20,7 +20,8 @@ class Program
 
         Console.WriteLine("Name: " + person.Name);
         Console.WriteLine("Details: " + person.Details);
-        Console.WriteLine("Is a member of the Church of Jesus Christ of Latter-day Saints: " + person.IsMember);
+        Console.WriteLine("Is a member of the Church of Jesus Christ of Latter-day Saints,: " + person.IsMember);
+        Console.WriteLine("A calling will be extended to you by your Bishop, congratulation!: " + person.IsMember);
 
     }
 }
